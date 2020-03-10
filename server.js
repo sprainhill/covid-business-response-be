@@ -10,3 +10,5 @@ server.use(express.json());
 server.get('/', (req, res) => {
     res.status(200).json({server: "running"});
 });
+
+module.exports = server;
