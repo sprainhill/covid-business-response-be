@@ -9,6 +9,6 @@ exports.seed = function(knex) {
                 date: "12/31/2019",
                 response: "a good one, really"
             }
-        ])
-    })
-}
+        ]);
+    });
+};
