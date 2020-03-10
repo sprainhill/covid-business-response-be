@@ -6,7 +6,6 @@ exports.seed = function(knex) {
         return knex('responses').insert([
             {
                 business_name: "Acme Co.",
-                date: "12/31/2019",
                 response: "a good one, really"
             }
         ]);

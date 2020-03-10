@@ -7,3 +7,7 @@ module.exports = {
 function getResponses() {
     return db('responses');
 }
+
+function getResponseById() {
+    return db('responses').where({ id })
+}
