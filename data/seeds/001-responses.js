@@ -12,6 +12,7 @@ exports.seed = function(knex) {
                 restrict_employee_travel_partial: true,
                 restrict_employee_travel_full: false,
                 response: "a good one, really",
+                private: true,
                 website: 'www.rorymurray.io'
             }
         ]);
