@@ -1,7 +1,11 @@
 const db = require("../data/db-config.js");
 
 module.exports = {
-    getResponses
+    getResponses,
+    getResponseById,
+    postResponse,
+    editResponse,
+    deleteResponse
 }
 
 // get all responses

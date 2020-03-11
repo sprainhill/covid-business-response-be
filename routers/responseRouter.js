@@ -16,4 +16,29 @@ router.get('/', (req, res) => {
     });
 })
 
+// get response by id
+router.get('/:id', (req, res) => {
+    const { id } = req.params;
+
+    responses.getResponseById(id)
+    .then(response => {
+        if (response) {
+            res.status(200).json(response);
+        } else {
+            res.status(404).json({ message: 'cannot find response with given id'});
+        }
+    })
+    .catch(err => {
+        res.status(500).json({message: 'error retrieving response'})
+    })
+
+
+})
+
+// post new response
+
+// edit response
+
+// delete response
+
 module.exports = router;
