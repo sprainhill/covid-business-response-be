@@ -19,10 +19,10 @@ function getResponseById() {
 }
 
 // post a new response
-
 function postResponse(response) {
+    console.log("response : ", response)
     return db('responses')
-    .insert(response, 'id')
+    .insert(response)
     .then(ids => {
         const [id] = ids;
         return getResponseById(id);
