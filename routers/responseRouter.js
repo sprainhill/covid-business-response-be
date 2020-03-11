@@ -2,8 +2,9 @@ const router = require("express").Router();
 
 const responses = require("../models/responseModel.js");
 
-// get all responses
 
+
+// get all responses
 router.get('/', (req, res) => {
     console.log("GET responses")
     responses
