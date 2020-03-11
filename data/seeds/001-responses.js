@@ -11,7 +11,8 @@ exports.seed = function(knex) {
                 full_remote_policy: false,
                 restrict_employee_travel_partial: true,
                 restrict_employee_travel_full: false,
-                response: "a good one, really"
+                response: "a good one, really",
+                website: 'www.rorymurray.io'
             }
         ]);
     });
