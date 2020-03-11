@@ -5,7 +5,7 @@ exports.up = function(knex) {
         tbl.increments();
         tbl
         .string('business_name', 255)
-        .nutNullable()
+        .notNullable()
         .unique();
         tbl
         .string('response', 500);
