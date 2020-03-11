@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
 // get response by id
 router.get('/:id', (req, res) => {
     const { id } = req.params;
-
     responses.getResponseById(id)
     .then(response => {
         if (response) {
@@ -37,7 +36,6 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     const response = req.body;
     console.log(req.body)
-
     responses.postResponse(response)
     .then(response => {
         res.status(201).json(response);
@@ -51,8 +49,9 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     const { id } = req.params;
     const updatedResponse = req.body;
+    console.log(updatedResponse)
 
-    response.editResponse(id, updatedResponse)
+    responses.editResponse(id, updatedResponse)
     .then(response => {
         if (response) {
             res.status(200).json(response);

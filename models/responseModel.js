@@ -14,7 +14,7 @@ function getResponses() {
 }
 
 // get response by id
-function getResponseById() {
+function getResponseById(id) {
     return db('responses').where({ id })
 }
 
